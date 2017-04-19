@@ -6,9 +6,14 @@ This is a docker image that eases setting up GeoServer running with a separated 
 
 The image is based on the official java:8-jre image
 
+In this case the GDAL libraries are available, it is possible to access to several GDAL’s supported data formats. Actually, the available GDAL plugins allow to support DTED, EHdr, ERDASImg, MrSID, JPEG 2000 (via MrSID Driver) and NITF data formats. Moreover, in case a valid license have been purchased and the proper native library is available, also ECW, JPEG 2000 (via ECW) and JPEG 2000 (via Kakadu) are supported. This section provides instructions to add and publish MrSID, ECW and JPEG 2000 datasets.
+
+ECW (Enhanced Compression Wavelet) is a proprietary wavelet compression image format optimized for aerial and satellite imagery. (Supported)
+
+
 ## Installation
 
-This image is available as a [trusted build on the docker hub](https://registry.hub.docker.com/u/thklein/geoserver/), and is the recommended method of installation.
+This image is available as a [trusted build on the docker hub](https://registry.hub.docker.com/u/threemmm/geoserver/), and is the recommended method of installation.
 Simple pull the image from the docker hub.
 
 ```bash
@@ -18,9 +23,9 @@ $ docker pull thklein/geoserver
 Alternatively you can build the image locally
 
 ```bash
-$ git clone https://github.com/threeem/docker-geoserver.git
+$ git clone https://github.com/threemmm/docker-geoserver.git
 $ cd docker-geoserver
-$ docker build -t "threeem/geoserver-docker" .
+$ docker build -t "threemmm/geoserver-docker" .
 ```
 
 ## Quick start
@@ -28,7 +33,7 @@ $ docker build -t "threeem/geoserver-docker" .
 You can quick start the image using the command line
 
 ```bash
-$ docker run --name "geoserver" -d -p 8080:8080 threeem/geoserver-docker
+$ docker run --name "geoserver" -d -p 8080:8080 threemmm/geoserver-docker
 ```
 
 Point your browser to `http://localhost:8080/geoserver` and login using GeoServer's default username and password:
