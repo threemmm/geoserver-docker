@@ -13,13 +13,14 @@ ECW (Enhanced Compression Wavelet) is a proprietary wavelet compression image fo
 
 ## Installation
 
+(NOT WORKING NOW) 
 This image is available as a [trusted build on the docker hub](https://registry.hub.docker.com/u/threemmm/geoserver/), and is the recommended method of installation.
 Simple pull the image from the docker hub.
 
 ```bash
 $ docker pull threemmm/geoserver-docker
 ```
-
+(USE THIS)
 Alternatively you can build the image locally
 
 ```bash
