@@ -17,7 +17,7 @@ This image is available as a [trusted build on the docker hub](https://registry.
 Simple pull the image from the docker hub.
 
 ```bash
-$ docker pull thklein/geoserver
+$ docker pull threemmm/geoserver-docker
 ```
 
 Alternatively you can build the image locally
